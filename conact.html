@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Dananz</title>
+    <!-- Подключение внешнего файла стилей -->
+    <link rel="stylesheet" href="./css/contact.css">
+</head>
+<body>
+
+    <!-- Шапка (Header) -->
+    <header>
+        <div class="container">
+            <div class="logo">Dananz</div>
+            <nav>
+                <a href="#">Home</a>
+                <a href="#">About Us</a>
+                <a href="#">Services</a>
+                <a href="#">Our Teams</a>
+            </nav>
+            <a href="#" class="btn-contact">Contact Us</a>
+        </div>
+    </header>
+
+    <!-- Основной контент страницы -->
+    <main class="container">
+        <!-- Заголовок страницы -->
+        <section class="contact-hero">
+            <h1>Contact Us</h1>
+            <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+        </section>
+
+        <!-- Форма обратной связи -->
+        <section class="form-section">
+            <form action="#">
+                <div class="form-grid">
+                    <div class="form-group">
+                        <label for="first-name">First Name</label>
+                        <input type="text" id="first-name" placeholder="First Name">
+                    </div>
+                    <div class="form-group">
+                        <label for="last-name">Last Name</label>
+                        <input type="text" id="last-name" placeholder="Last Name">
+                    </div>
+                    <div class="form-group full-width">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" placeholder="Email">
+                    </div>
+                    <div class="form-group full-width">
+                        <label for="phone">Phone Number</label>
+                        <div class="phone-input-container">
+                            <select id="country-code">
+                                <option value="US">US</option>
+                                <option value="ID">ID</option>
+                            </select>
+                            <input type="tel" id="phone" placeholder="Phone Number">
+                        </div>
+                    </div>
+                    <div class="form-group full-width">
+                        <label for="message">Message</label>
+                        <textarea id="message" rows="6" placeholder="Your Message"></textarea>
+                    </div>
+                </div>
+                <button type="submit" class="btn-submit">Send Message</button>
+            </form>
+        </section>
+
+        <!-- Адреса магазинов (Locations) -->
+        <section class="stores-section">
+            <span class="section-tag">Location</span>
+            <div class="stores-grid">
+                <div class="store-column contact-info-block">
+                    <h2>Visit Our Stores</h2>
+                    <p style="margin-top: 15px;">Find us at these locations.</p>
+                    <br>
+                    <strong>Email</strong>
+                    <p>dananz@gmail.com</p>
+                    <strong>Phone</strong>
+                    <p>+62 811 000 1100</p>
+                </div>
+                <div class="stores-inner-grid">
+                    <div class="store-column">
+                        <h3>Jakarta</h3>
+                        <p>Customize your interior design into a dream place with the best designers and quality furniture. We try our best to fulfill your expectations.</p>
+                        <h3>Yogyakarta</h3>
+                        <p>Customize your interior design into a dream place with the best designers and quality furniture. We try our best to fulfill your expectations.</p>
+                    </div>
+                    <div class="store-column">
+                        <h3>Surakarta</h3>
+                        <p>Customize your interior design into a dream place with the best designers and quality furniture. We try our best to fulfill your expectations.</p>
+                        <h3>Bandung</h3>
+                        <p>Customize your interior design into a dream place with the best designers and quality furniture. We try our best to fulfill your expectations.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Синий баннер (CTA) -->
+    <section class="cta-banner">
+        <div class="container">
+            <div>
+                <h2>Let's discuss making your interior like a dream place!</h2>
+            </div>
+            <div>
+                <a href="#" class="btn-white">Contact Us</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Подвал (Footer) -->
+    <footer>
+        <div class="container footer-grid">
+            <div class="footer-logo-side">
+                <h2>Dananz</h2>
+                <p>one of the best furniture agency.</p>
+            </div>
+            <div class="newsletter-side">
+                <p>Enter your email to get the latest news</p>
+                <div class="newsletter-form">
+                    <input type="email" placeholder="Email Address">
+                    <button type="button">→</button>
+                </div>
+                <div class="social-links-container">
+                    <p class="social-title">Follow Us On</p>
+                    <div class="social-icons">
+                        <a href="#">🌐</a>
+                        <a href="#">📷</a>
+                        <a href="#">🐦</a>
+                        <a href="#">🎵</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
