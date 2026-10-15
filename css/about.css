@@ -1,0 +1,134 @@
+:root {
+  --navy: #2f3a7c;
+  --text: #111;
+  --muted: #8a8a8a;
+  --line: #e6e6e6;
+  --yellow: #f5c542;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: "Poppins", sans-serif;
+  color: var(--text);
+  background: #fff;
+  line-height: 1.5;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+img { display: block; width: 100%; object-fit: cover; }
+a { color: inherit; text-decoration: none; }
+ul { list-style: none; }
+
+.container { width: min(1200px, 100% - 40px); margin-inline: auto; }
+
+/* Header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px 0;
+}
+.logo { display: block; }
+.logo img { width: 126px; height: 54px; }
+.nav { display: flex; align-items: center; gap: 36px; font-size: 13px; }
+.nav a.active { font-weight: 600; }
+
+.btn {
+  display: inline-block;
+  background: var(--navy);
+  color: #fff;
+  padding: 10px 22px;
+  font-size: 13px;
+}
+.btn-small { padding: 10px 18px; }
+.btn-white { background: #fff; color: var(--text); }
+
+/* Hero */
+.hero { text-align: center; padding-top: 40px; }
+.hero h1 { font-size: 48px; font-weight: 600; }
+.hero p { max-width: 520px; margin: 14px auto 36px; font-size: 13px; }
+.hero img { height: 513px; }
+
+/* Labels */
+.label {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  font-size: 11px;
+  margin-bottom: 18px;
+}
+.label i { flex: 0 0 220px; height: 1px; background: var(--text); }
+
+/* Achievement */
+.achievement { padding-top: 90px; }
+.achievement h2 { font-size: 28px; font-weight: 600; line-height: 1.4; margin-bottom: 36px; }
+.achievement-grid { display: grid; grid-template-columns: minmax(0, 883px) 1fr; gap: 66px; }
+.achievement-grid img { height: 525px; }
+
+.stats {
+  background: var(--navy);
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  text-align: center;
+  padding: 24px;
+}
+.stats strong { display: block; font-size: 40px; font-weight: 400; }
+.stats span { font-size: 12px; }
+
+/* Why choose us */
+.why { padding-top: 90px; }
+.why h2 { font-size: 28px; font-weight: 600; }
+.why-text { max-width: 420px; margin: 12px 0 36px; font-size: 13px; color: var(--muted); }
+
+.cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+.card { border: 1px solid var(--line); padding: 32px 28px; text-align: center; min-height: 190px; }
+.icon { width: 56px; height: 56px; border-radius: 50%; background: #d9d9d9; margin: 0 auto 18px; }
+.card h3 { font-size: 16px; font-weight: 600; margin-bottom: 10px; }
+.card p { font-size: 12px; color: var(--muted); }
+
+/* CTA */
+.cta { background: var(--navy); color: #fff; margin-top: 90px; padding: 80px 0; }
+.cta-inner { display: flex; justify-content: space-between; align-items: center; gap: 40px; }
+.cta h2 { font-size: 28px; font-weight: 500; max-width: 380px; }
+.cta-right { max-width: 320px; }
+.cta-right p { font-size: 12px; margin-bottom: 16px; }
+
+/* Footer */
+.footer {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  padding: 56px 0;
+}
+.slogan { font-size: 24px; font-weight: 600; margin-top: 20px; max-width: 320px; }
+.subscribe { width: 340px; }
+.dot-title { font-size: 12px; display: flex; align-items: center; gap: 8px; }
+.dot-title::before { content: ""; width: 8px; height: 8px; border-radius: 50%; background: var(--text); }
+.email-form { display: flex; border-bottom: 1px solid var(--text); margin: 14px 0 24px; }
+.email-form input { flex: 1; border: 0; outline: 0; padding: 8px 0; font: inherit; font-size: 12px; }
+.email-form button { border: 0; background: none; font-size: 18px; cursor: pointer; }
+.follow { font-size: 11px; margin-bottom: 10px; }
+.socials { display: flex; gap: 10px; }
+.socials a {
+  width: 22px; height: 22px; border-radius: 50%;
+  background: var(--text); color: #fff;
+  display: grid; place-items: center; font-size: 10px;
+}
+
+a:focus-visible, button:focus-visible, input:focus-visible { outline: 2px solid var(--navy); outline-offset: 2px; }
+
+/* Mobile */
+@media (max-width: 800px) {
+  .nav { gap: 16px; flex-wrap: wrap; justify-content: flex-end; }
+  .hero img, .achievement-grid img { height: 260px; }
+  .achievement-grid { grid-template-columns: 1fr; gap: 24px; }
+  .stats { flex-direction: row; gap: 12px; }
+  .stats strong { font-size: 28px; }
+  .cards { grid-template-columns: 1fr; }
+  .cta-inner, .footer { flex-direction: column; align-items: flex-start; }
+  .subscribe { width: 100%; }
+}
