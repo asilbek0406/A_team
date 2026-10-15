@@ -65,7 +65,7 @@ input {
     height: 49px;
     padding: 0 30px;
     font-size: 14px;
-    font-weight: 500;
+    font-weight: 400;
     line-height: 1;
     border: 1px solid transparent;
     transition: background-color 0.2s, color 0.2s, border-color 0.2s;
@@ -82,6 +82,7 @@ input {
 
 .btn--outline {
     min-width: 159px;
+    font-weight: 500;
     color: var(--color-text);
     border-color: var(--color-text);
 }
@@ -92,6 +93,7 @@ input {
 }
 
 .btn--light {
+    font-weight: 500;
     color: var(--color-text);
     background: var(--color-white);
 }
@@ -107,6 +109,7 @@ input {
     max-width: 600px;
     margin-bottom: 23px;
     font-size: 16px;
+    font-weight: 500;
     line-height: 16px;
     color: var(--color-black);
     text-transform: uppercase;
@@ -115,7 +118,9 @@ input {
 .section-label::after {
     content: "";
     flex: 1;
+    align-self: flex-start;
     height: 2px;
+    margin-top: 5px;
     background: var(--color-black);
 }
 
@@ -158,7 +163,12 @@ input {
 .nav {
     display: flex;
     align-items: center;
-    gap: 73px;
+    gap: 74.5px;
+}
+
+.nav .btn {
+    position: relative;
+    top: -1px;
 }
 
 .nav__list {
@@ -175,7 +185,10 @@ input {
 }
 
 .nav__link--active {
-    font-weight: 500;
+    position: relative;
+    top: -2px;
+    left: 1px;
+    font-weight: 600;
 }
 
 .nav__link:hover {
@@ -193,6 +206,8 @@ input {
 }
 
 .hero__title {
+    position: relative;
+    top: -1px;
     max-width: 640px;
     font-size: 72px;
     font-weight: 700;
@@ -237,12 +252,14 @@ input {
 
 .stat__label {
     font-size: 16px;
+    font-weight: 300;
     line-height: 16px;
+    letter-spacing: 0.1px;
 }
 
 .hero__copyright {
     position: absolute;
-    top: 112px;
+    top: 111px;
     right: -1px;
     font-size: 18px;
     line-height: 28px;
@@ -261,6 +278,10 @@ input {
 
 .about {
     padding-top: var(--section-gap);
+}
+
+.about .section-label {
+    gap: 17px;
 }
 
 .about__quote {
@@ -304,6 +325,8 @@ input {
 }
 
 .person-card__name {
+    position: relative;
+    top: -1px;
     font-weight: 600;
     color: var(--color-black);
 }
@@ -321,6 +344,7 @@ input {
 
 .about__text .btn {
     margin-top: 40px;
+    padding-bottom: 2px;
 }
 
 /* ---------- Services ---------- */
@@ -346,7 +370,7 @@ input {
     display: flex;
     flex-direction: column;
     gap: 32px;
-    max-width: 839px;
+    max-width: 838px;
     margin-top: 39px;
 }
 
@@ -364,7 +388,7 @@ input {
 }
 
 .services__name {
-    font-weight: 500;
+    font-weight: 600;
     transition: color 0.2s;
 }
 
@@ -392,6 +416,11 @@ input {
     padding-top: var(--section-gap);
 }
 
+.products .section-label,
+.materials .section-label {
+    color: var(--color-text);
+}
+
 .products__head {
     display: flex;
     align-items: flex-start;
@@ -405,7 +434,7 @@ input {
 
 .products__text {
     max-width: 473px;
-    margin-top: 54px;
+    margin-top: 53px;
 }
 
 .products__list {
@@ -433,7 +462,7 @@ input {
 
 .product__title {
     font-size: 32px;
-    font-weight: 500;
+    font-weight: 600;
     line-height: 52px;
 }
 
@@ -444,7 +473,7 @@ input {
 }
 
 .product__link {
-    margin: 15px 4px 0 auto;
+    margin: 15px 5px 0 auto;
 }
 
 /* ---------- Materials ---------- */
@@ -467,6 +496,7 @@ input {
 
 .materials .section-label {
     width: 600px;
+    gap: 22px;
 }
 
 .materials__text {
@@ -507,13 +537,13 @@ input {
 
 .cta__text {
     font-size: 18px;
-    font-weight: 300;
     line-height: 29px;
     color: var(--color-light);
 }
 
 .cta__aside .btn {
     margin-top: 20px;
+    padding-bottom: 2px;
 }
 
 /* ---------- Footer ---------- */
@@ -532,7 +562,7 @@ input {
 .footer__slogan {
     margin-top: 10px;
     font-size: 36px;
-    font-weight: 500;
+    font-weight: 600;
     line-height: 61px;
 }
 
@@ -544,7 +574,7 @@ input {
 .subscribe__label {
     display: flex;
     align-items: center;
-    gap: 12px;
+    gap: 10px;
     font-size: 18px;
     line-height: 27px;
 }
@@ -560,7 +590,7 @@ input {
 
 .subscribe__field {
     position: relative;
-    margin-top: 26px;
+    margin-top: 25px;
 }
 
 .subscribe__input {
@@ -587,7 +617,7 @@ input {
 .subscribe__btn {
     position: absolute;
     top: -10px;
-    right: 6px;
+    right: 7px;
     display: flex;
     padding: 0;
     color: var(--color-text);
@@ -598,7 +628,7 @@ input {
 
 .socials {
     width: fit-content;
-    margin: 41px 0 0 auto;
+    margin: 42px 0 0 auto;
 }
 
 .socials__title {
@@ -684,6 +714,12 @@ input {
 }
 
 @media (max-width: 992px) {
+    .nav .btn,
+    .nav__link--active {
+        top: 0;
+        left: 0;
+    }
+
     .header__inner {
         flex-wrap: wrap;
         gap: 20px;
